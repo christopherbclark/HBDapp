@@ -1,0 +1,115 @@
+extends index
+block content
+  // This example requires Tailwind CSS v2.0+
+  .max-w-7xl.mx-auto.py-12.px-4.bg-gray-50(class='sm:px-6 lg:px-8')
+    h2.text-3xl.font-extrabold.text-gray-900(class='sm:text-5xl sm:leading-none sm:tracking-tight lg:text-6xl') Simple Pricing.
+    p.mt-6.max-w-2xl.text-xl.text-gray-500
+      | Choose an affordable plan that&apos;s packed with the best features for engaging your audience, creating customer loyalty, and driving sales.
+    // Tiers
+    .mt-24.space-y-12(class='lg:space-y-0 lg:grid lg:grid-cols-3 lg:gap-x-8')
+      .relative.p-8.bg-white.border.border-gray-200.rounded-2xl.shadow-sm.flex.flex-col
+        .flex-1
+          h3.text-xl.font-semibold.text-gray-900 Freelancer
+          p.mt-4.flex.items-baseline.text-gray-900
+            span.text-5xl.font-extrabold.tracking-tight $24
+            span.ml-1.text-xl.font-semibold /month
+          p.mt-6.text-gray-500 The essentials to provide your best work for clients.
+          // Feature list
+          ul.mt-6.space-y-6(role='list')
+            li.flex
+              // Heroicon name: outline/check
+              svg.flex-shrink-0.w-6.h-6.text-orange-500(xmlns='http://www.w3.org/2000/svg' fill='none' viewbox='0 0 24 24' stroke='currentColor' aria-hidden='true')
+                path(stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M5 13l4 4L19 7')
+              span.ml-3.text-gray-500 5 products
+            li.flex
+              // Heroicon name: outline/check
+              svg.flex-shrink-0.w-6.h-6.text-orange-500(xmlns='http://www.w3.org/2000/svg' fill='none' viewbox='0 0 24 24' stroke='currentColor' aria-hidden='true')
+                path(stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M5 13l4 4L19 7')
+              span.ml-3.text-gray-500 Up to 1,000 subscribers
+            li.flex
+              // Heroicon name: outline/check
+              svg.flex-shrink-0.w-6.h-6.text-orange-500(xmlns='http://www.w3.org/2000/svg' fill='none' viewbox='0 0 24 24' stroke='currentColor' aria-hidden='true')
+                path(stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M5 13l4 4L19 7')
+              span.ml-3.text-gray-500 Basic analytics
+            li.flex
+              // Heroicon name: outline/check
+              svg.flex-shrink-0.w-6.h-6.text-orange-500(xmlns='http://www.w3.org/2000/svg' fill='none' viewbox='0 0 24 24' stroke='currentColor' aria-hidden='true')
+                path(stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M5 13l4 4L19 7')
+              span.ml-3.text-gray-500 48-hour support response time
+        a.bg-orange-50.text-orange-700.mt-8.block.w-full.py-3.px-6.border.border-transparent.rounded-md.text-center.font-medium(href='#' class='hover:bg-orange-100') Monthly billing
+      .relative.p-8.bg-white.border.border-gray-200.rounded-2xl.shadow-sm.flex.flex-col
+        .flex-1
+          h3.text-xl.font-semibold.text-gray-900 Startup
+          p.absolute.top-0.px-4.bg-orange-500.rounded-full.text-xs.font-semibold.uppercase.tracking-wide.text-white.transform(class='py-1.5 -translate-y-1/2') Most popular
+          p.mt-4.flex.items-baseline.text-gray-900
+            span.text-5xl.font-extrabold.tracking-tight $32
+            span.ml-1.text-xl.font-semibold /month
+          p.mt-6.text-gray-500 A plan that scales with your rapidly growing business.
+          // Feature list
+          ul.mt-6.space-y-6(role='list')
+            li.flex
+              // Heroicon name: outline/check
+              svg.flex-shrink-0.w-6.h-6.text-orange-500(xmlns='http://www.w3.org/2000/svg' fill='none' viewbox='0 0 24 24' stroke='currentColor' aria-hidden='true')
+                path(stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M5 13l4 4L19 7')
+              span.ml-3.text-gray-500 25 products
+            li.flex
+              // Heroicon name: outline/check
+              svg.flex-shrink-0.w-6.h-6.text-orange-500(xmlns='http://www.w3.org/2000/svg' fill='none' viewbox='0 0 24 24' stroke='currentColor' aria-hidden='true')
+                path(stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M5 13l4 4L19 7')
+              span.ml-3.text-gray-500 Up to 10,000 subscribers
+            li.flex
+              // Heroicon name: outline/check
+              svg.flex-shrink-0.w-6.h-6.text-orange-500(xmlns='http://www.w3.org/2000/svg' fill='none' viewbox='0 0 24 24' stroke='currentColor' aria-hidden='true')
+                path(stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M5 13l4 4L19 7')
+              span.ml-3.text-gray-500 Advanced analytics
+            li.flex
+              // Heroicon name: outline/check
+              svg.flex-shrink-0.w-6.h-6.text-orange-500(xmlns='http://www.w3.org/2000/svg' fill='none' viewbox='0 0 24 24' stroke='currentColor' aria-hidden='true')
+                path(stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M5 13l4 4L19 7')
+              span.ml-3.text-gray-500 24-hour support response time
+            li.flex
+              // Heroicon name: outline/check
+              svg.flex-shrink-0.w-6.h-6.text-orange-500(xmlns='http://www.w3.org/2000/svg' fill='none' viewbox='0 0 24 24' stroke='currentColor' aria-hidden='true')
+                path(stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M5 13l4 4L19 7')
+              span.ml-3.text-gray-500 Marketing automations
+        a.bg-orange-500.text-white.mt-8.block.w-full.py-3.px-6.border.border-transparent.rounded-md.text-center.font-medium(href='#' class='hover:bg-orange-600') Monthly billing
+      .relative.p-8.bg-white.border.border-gray-200.rounded-2xl.shadow-sm.flex.flex-col
+        .flex-1
+          h3.text-xl.font-semibold.text-gray-900 Enterprise
+          p.mt-4.flex.items-baseline.text-gray-900
+            span.text-5xl.font-extrabold.tracking-tight $48
+            span.ml-1.text-xl.font-semibold /month
+          p.mt-6.text-gray-500 Dedicated support and infrastructure for your company.
+          // Feature list
+          ul.mt-6.space-y-6(role='list')
+            li.flex
+              // Heroicon name: outline/check
+              svg.flex-shrink-0.w-6.h-6.text-orange-500(xmlns='http://www.w3.org/2000/svg' fill='none' viewbox='0 0 24 24' stroke='currentColor' aria-hidden='true')
+                path(stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M5 13l4 4L19 7')
+              span.ml-3.text-gray-500 Unlimited products
+            li.flex
+              // Heroicon name: outline/check
+              svg.flex-shrink-0.w-6.h-6.text-orange-500(xmlns='http://www.w3.org/2000/svg' fill='none' viewbox='0 0 24 24' stroke='currentColor' aria-hidden='true')
+                path(stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M5 13l4 4L19 7')
+              span.ml-3.text-gray-500 Unlimited subscribers
+            li.flex
+              // Heroicon name: outline/check
+              svg.flex-shrink-0.w-6.h-6.text-orange-500(xmlns='http://www.w3.org/2000/svg' fill='none' viewbox='0 0 24 24' stroke='currentColor' aria-hidden='true')
+                path(stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M5 13l4 4L19 7')
+              span.ml-3.text-gray-500 Advanced analytics
+            li.flex
+              // Heroicon name: outline/check
+              svg.flex-shrink-0.w-6.h-6.text-orange-500(xmlns='http://www.w3.org/2000/svg' fill='none' viewbox='0 0 24 24' stroke='currentColor' aria-hidden='true')
+                path(stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M5 13l4 4L19 7')
+              span.ml-3.text-gray-500 1-hour, dedicated support response time
+            li.flex
+              // Heroicon name: outline/check
+              svg.flex-shrink-0.w-6.h-6.text-orange-500(xmlns='http://www.w3.org/2000/svg' fill='none' viewbox='0 0 24 24' stroke='currentColor' aria-hidden='true')
+                path(stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M5 13l4 4L19 7')
+              span.ml-3.text-gray-500 Marketing automations
+            li.flex
+              // Heroicon name: outline/check
+              svg.flex-shrink-0.w-6.h-6.text-orange-500(xmlns='http://www.w3.org/2000/svg' fill='none' viewbox='0 0 24 24' stroke='currentColor' aria-hidden='true')
+                path(stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M5 13l4 4L19 7')
+              span.ml-3.text-gray-500 Custom integrations
+        a.bg-orange-50.text-orange-700.mt-8.block.w-full.py-3.px-6.border.border-transparent.rounded-md.text-center.font-medium(href='#' class='hover:bg-orange-100') Monthly billing

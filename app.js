@@ -1,4 +1,5 @@
 const express = require('express');
+const helmet = require('helmet');
 const path = require('path');
 const viewRouter = require('./routes/viewRoutes');
 
@@ -9,5 +10,7 @@ app.set('views', path.join(__dirname, 'views'));
 
 app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', viewRouter);
+
+app.use(helmet());
 
 module.exports = app;
